@@ -1,7 +1,7 @@
 #ifndef ACTUATOR_HPP
 #define ACTUATOR_HPP
 
-#include <properties.hpp>
+#include "properties.hpp"
 
 
 class Actuator{

@@ -1,7 +1,7 @@
 #ifndef LAMP_HPP
 #define LAMP_HPP
 
-#include <actuator.hpp>
+#include "actuator.hpp"
 
 class Lamp: public Actuator{
 public:

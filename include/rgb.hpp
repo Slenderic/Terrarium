@@ -4,7 +4,7 @@
 #include <properties.hpp>
 
 #define H2S 3600
-#define PERIOD 24*H2S // just temp for testing
+#define PERIOD 1*H2S // just temp for testing
 
 /** TODO: change ctor of rgb to accept the array of led Values**/
 unsigned char ledValues[4][12]=    {{0, 255, 255, 255, 255, 255, 255, 255, 244, 201,  64, 0},   //red
