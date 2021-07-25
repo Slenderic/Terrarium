@@ -1,9 +1,11 @@
-#include "properties.hpp"
-#include "heater.hpp"
-#include "lamp.hpp"
 #include "sht.hpp"
 #include "tsic20x.hpp"
 #include "updater.hpp"
+#include "heater.hpp"
+#include "lamp.hpp"
+//#include "rgb.hpp"
+
+
 
 std::shared_ptr<Updater> updater;
 auto start = std::chrono::steady_clock::now();
@@ -29,9 +31,9 @@ void setup() {
   updater->addSensor(std::make_shared<Tsic20x>(TSIC_DATA_2,TSIC_SUPPLY));
 
   /** TODO: Set RGB **/
-  updater->addLED(std::make_shared<RGB>(18, 0, LED::BLUE));
-  updater->addLED(std::make_shared<RGB>(19, 1, LED::GREEN));
-  updater->addLED(std::make_shared<RGB>(21, 2, LED::RED));
+  // updater->addLED(std::make_shared<RGB>(18, 0, LED::BLUE));
+  // updater->addLED(std::make_shared<RGB>(19, 1, LED::GREEN));
+  // updater->addLED(std::make_shared<RGB>(21, 2, LED::RED));
 
   /** TODO: Website implementation / Internet connection**/
 

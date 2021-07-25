@@ -29,7 +29,10 @@
 #define TSIC_DATA_2 19
 #define TSIC_SUPPLY 15
 
-#define LED_G 
+#define LED_R_PIN 35
+#define LED_G_PIN 34
+#define LED_B_PIN 33
+#define LED_UV_PIN 32
 
 #define ON 0
 #define OFF 1
@@ -37,10 +40,14 @@
 /** Forward declaration **/
 class Sensor;   
 class Actuator;
+class Heater;
+class Lamp;
+class RGB;
 
-enum LED {RED=0, GREEN, BLUE, UV}; 
+enum LED {RED=0, GREEN=1, BLUE=2, UV=3}; 
 enum class ACTU {LAMP=0, HEATER};
 enum class SENS {SHT15=0, TSIC201}; //Definition of sensor can be extendet at will
+
 
 using sensType = std::vector<float>;
 using Scedual = std::vector<uint8_t>;
